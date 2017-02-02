@@ -12,7 +12,6 @@ import android.location.LocationManager;
 import android.os.Build;
 import android.os.Bundle;
 import android.os.IBinder;
-import android.support.annotation.Nullable;
 import android.support.v4.app.NotificationCompat;
 import android.util.Log;
 
@@ -20,7 +19,8 @@ import android.util.Log;
  * Created by Satvik on 2/2/2017.
  */
 
-public class myService extends Service {
+public class MyService extends Service {
+
 
     private Location mDestination;
 
@@ -29,9 +29,9 @@ public class myService extends Service {
         public void onLocationChanged(Location location) {
 
             float distance = mDestination.distanceTo(location);
-            Log.d("MyService.java", Float.toString(distance));
+            Log.d("MyService", Float.toString(distance));
             NotificationCompat.Builder mBuilder =
-                    new NotificationCompat.Builder(myService.this)
+                    new NotificationCompat.Builder(MyService.this)
                             .setSmallIcon(R.mipmap.ic_launcher)
                             .setContentTitle("Distance")
                             .setContentText(Float.toString(distance));
@@ -54,7 +54,7 @@ public class myService extends Service {
         }
     };
 
-    public myService() {
+    public MyService() {
     }
 
     @Override
