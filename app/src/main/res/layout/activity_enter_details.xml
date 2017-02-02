@@ -48,7 +48,7 @@
         android:layout_height="wrap_content"
         android:inputType="textPersonName"
         android:ems="10"
-        android:id="@+id/editText11"
+        android:id="@+id/cponename"
         android:hint="Name"
         android:layout_marginBottom="20px" />
     </android.support.design.widget.TextInputLayout>
@@ -64,7 +64,7 @@
         android:layout_height="wrap_content"
         android:inputType="number"
         android:ems="10"
-        android:id="@+id/phoneNumber"
+        android:id="@+id/cponephone"
         android:hint="Phone Number" />
     </android.support.design.widget.TextInputLayout>
 
@@ -87,7 +87,7 @@
         android:layout_height="wrap_content"
         android:inputType="text"
         android:ems="10"
-        android:id="@+id/editText13"
+        android:id="@+id/cptwoname"
         android:hint="Name"
         android:layout_marginBottom="20px" />
     </android.support.design.widget.TextInputLayout>
@@ -103,7 +103,7 @@
         android:layout_height="wrap_content"
         android:inputType="number"
         android:ems="10"
-        android:id="@+id/editText12"
+        android:id="@+id/cptwophone"
         android:hint="Phone Number" />
     </android.support.design.widget.TextInputLayout>
 
@@ -112,6 +112,6 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/button"
-        android:layout_marginBottom="30px"/>
+        android:layout_gravity="bottom" />
 
 </LinearLayout>
